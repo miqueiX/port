@@ -1,0 +1,96 @@
+@font-face {
+    font-family: mexico;
+    src: url(MexicanTequila-Italic.ttf);
+}
+
+.grade{
+    background-color: rgba(183, 158, 30, 0.453);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.cabeçalho{
+    background-color: rgb(94, 168, 242);
+    justify-content: space-between;
+    display: flex;
+    
+}
+
+.cabeçalho h1{
+animation: giro 5s 3s ease-in-out infinite alternate;
+margin-left: 20px;
+padding: 5px;
+}
+
+@keyframes giro {
+from{
+    transform: rotate(5deg);
+           }
+to{
+    transform: rotate(-5deg);
+}
+ 
+}
+
+.cabeçalho h2{
+    margin-top: 100px;
+}
+
+.cabeçalho a{
+ margin-top: 29px;
+    padding-right: 25px;
+    color: whitesmoke;
+
+}
+
+
+
+h1, h2, h3, p{
+    color: rgba(196, 58, 58, 0.947);
+    font-size: 40px;
+    text-align: center ;
+    font-family: "mexico";
+}
+
+h1{
+    font-size: 70px;
+}
+
+body{
+    background-color: #F5F06C;
+
+}
+
+.rodapé a{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.item{
+    position: relative;
+}
+
+.item p{
+position:absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+opacity:0;
+}
+
+.item:hover p{
+    opacity: 1;
+    transition: 2s;
+}
+
+.item:hover img {
+opacity: 0.3;
+transition:2s;
+}
+
+.item img{
+    border-radius: 20px 70px 20px  70px;
+}
+
